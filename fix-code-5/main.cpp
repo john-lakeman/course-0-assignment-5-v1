@@ -3,7 +3,7 @@
 using namespace std;
 
 float divideNumbers(const float value1, const float value2) {
-  return value1 * value2;
+  return value1 / value2;
 }
 
 int main() {
