@@ -3,16 +3,28 @@
 using namespace std;
 
 // Uncomment and fill out this function for Part 2.
-// float CostOfIngredient(const string ingredient) {
-//
-// }
+float CostOfIngredient(const string ingredient) {
+  cout << "What ingredient would you like to add: ";
+  cin >> ingredient;
+
+  int num_ingredient;
+  cout << "How many " << ingredient << " are in the recipe: ";
+  cin >> num_ingredient;
+  if (num_ingredient > 0) {
+    int price_ingredient;
+    cout << "What is the price of an " << ingredient << ": ";
+    cin >> price_ingredient;
+    int price_of_all_ingredients = num_ingredient * price_ingredient;
+    total_cost = total_cost + price_of_all_ingredients;
+  }
+}
 
 int main() {
   float total_cost = 0;
 
   int num_avocados;
   cout << "How many avocados are in the recipe: ";
-  cin >> num_avocados
+  cin >> num_avocados;
   if (num_avocados > 0) {
     int price_avocado;
     cout << "What is the price of an avocado: ";
@@ -21,12 +33,12 @@ int main() {
     total_cost = total_cost + price_of_all_avocados;
   }
 
-  int num_tomatos;
+  int num_tomatoes;
   cout << "How many tomatoes are in the recipe: ";
   cin >> num_tomatoes;
   if (num_tomatoes > 0) {
     int price_tomato;
-    cout << "What is the price of a tomato: ";
+    cout << "What is the price of a tomatoe: ";
     cin >> price_tomato;
     int price_of_all_tomatoes = num_tomatoes * price_tomato;
     total_cost = total_cost + price_of_all_tomatoes;
