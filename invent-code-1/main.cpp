@@ -4,18 +4,18 @@ using namespace std;
 
 // Uncomment and fill out this function for Part 2.
 float CostOfIngredient(const string ingredient) {
+  string new_ingredient;
   cout << "What ingredient would you like to add: ";
-  cin >> ingredient;
+  cin >> new_ingredient;
 
-  int num_ingredient;
-  cout << "How many " << ingredient << " are in the recipe: ";
-  cin >> num_ingredient;
-  if (num_ingredient > 0) {
-    int price_ingredient;
-    cout << "What is the price of an " << ingredient << ": ";
-    cin >> price_ingredient;
-    int price_of_all_ingredients = num_ingredient * price_ingredient;
-    total_cost = total_cost + price_of_all_ingredients;
+  int num_new_ingredient;
+  cout << "How many " << num_new_ingredient << " are in the recipe: ";
+  cin >> num_new_ingredient;
+  if (num_new_ingredient > 0) {
+    int price_new_ingredient;
+    cout << "What is the price of an " << new_ingredient << ": ";
+    cin >> price_new_ingredient;
+    int price_of_new_ingredient = num_new_ingredient * price_new_ingredient;
   }
 }
 
